@@ -3,7 +3,7 @@ import requests
 
 
 window = Tk()
-window.title("Wymiana walut")
+window.title("Currency exchange")
 window.geometry("400x200")
 
 def multiplication(ask):
@@ -33,7 +33,7 @@ def get_url():
     if data.status_code == 200:
         download_data(data)
     else:
-        print("błąd")
+        print("ERROR")
         return -1
 
 options = [
